@@ -1,0 +1,54 @@
+.input-wrapper {
+    user-select: none;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    padding-left: 15px;
+    transition: .3s;
+}
+.input-wrapper:hover {
+    background-color: #f1fcff;
+}
+.input{
+    width: 20px;
+    height: 1px;
+    position: relative;
+    
+}
+.input::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #d6dbdb;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+.input-arrow {
+    position: absolute;
+    left: 20px;
+}
+.input:checked::after {
+    background-color: #f2fcff;
+    background-image: url('../../img/arrow.png');
+}
+.input-title {
+    width: 100px;
+}
+.input-only {
+    margin-left: 20px;
+    font-size: 15px;
+    color: #1394f791;
+}
+.input-only:hover {
+    color: #0a90f7;
+}
